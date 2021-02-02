@@ -7,7 +7,8 @@ from dotenv import load_dotenv, find_dotenv
 
 app = Flask(__name__)
 
-load_dotenv(find_dotenv()) #to load API keys
+#abstraction of API keys
+load_dotenv(find_dotenv()) 
 
 spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
 
