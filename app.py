@@ -3,8 +3,7 @@ import random
 import requests
 import os
 from dotenv import load_dotenv, find_dotenv
-from methods import get_access_token
-from spotify import get_header, get_top_10_tracks, get_artist_image, get_tracks_images, get_tracks_previews
+from spotify import get_access_token, get_header, get_top_10_tracks, get_artist_image, get_tracks_images, get_tracks_previews
 
 app = Flask(__name__)
 
