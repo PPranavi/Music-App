@@ -20,7 +20,7 @@ def get_access_token():
     access_token = auth_response_data['access_token']
     
     return access_token
-
+    
 def get_header(access_token):
     return {'Authorization': 'Bearer {token}'.format(token=access_token)}
     
