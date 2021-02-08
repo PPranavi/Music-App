@@ -42,7 +42,7 @@ In your terminal:
 
 ## Known Problems
 1. A few songs from several artists do not have any preview links. On the web application, the audio feature is greyed out as a result. I have yet to address this issue in my code, but I will attempt to get around it by only fetching information of songs with all required fields filled in. 
-2. The code iss slightly unorganized. In order to enhance user readibility, I will attempt to add more comments to my code and create classes where necessary to separate methods/function definitions.
+2. The code is slightly unorganized. In order to enhance user readibility, I will attempt to add more comments to my code and create classes where necessary to separate methods/function definitions.
 3. My web application has yet to be beautified. The UI is very rigid and is not layed out in an organized manner. I will attemp to beautify my web app by choosing more attractive colors, mature fonts, and styling elements (rounded image corners, etc.).
 
 ## Technical Issues
