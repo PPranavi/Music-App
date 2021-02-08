@@ -5,7 +5,7 @@
     </head>
     <body>
         <header>
-            <h1> {{ name }} </h1>
+            <h1><span> {{ name }} </span></h1>
             <img src= "{{ image }}"/>
         </header>
         <h3> Top 10 Tracks </h3>
@@ -14,9 +14,14 @@
                 <li>{{ tracks[i] }}</li>
             {%endfor%}
         </ol>
-        <h3> Sample </h3>
-        <p> {{track_name}} </p>
-        <img src= "{{ track_image }}"/>
-        <audio src="{{ track_preview }}" controls></audio>
+        <h3> Song: {{track_name}} </h3>
+        <div>
+            <img src= "{{ track_image }}"/>
+        </div>
+        <div>
+             <audio src="{{ track_preview }}" controls></audio>
+        </div>
+       
+        
     </body>
 </html>
