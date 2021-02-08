@@ -7,7 +7,7 @@ body {
     background-color: black;
     background-image: url(https://i.pinimg.com/originals/89/23/a2/8923a220c509f3e1a69af46b3588434e.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100vh;
+    background-size: cover;
     text-align: center; 
     list-style-position: inside;
     color: #682813;
@@ -23,6 +23,10 @@ h1 span {
 
 h3 {
     color: #D93D0B;
+}
+
+h3 span {
+    background-color: #FEF7F4;
 }
 
 ol li {
