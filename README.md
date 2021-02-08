@@ -22,11 +22,11 @@ In your terminal:
 
 ## Setup
 1. Create a `.env` file in your main directory and add your Spotify client ID key and client secret key with the lines: `export CLIENT_ID='YOUR_ID'` and `export CLIENT_SECRET='YOUR_SECRET'`
-2. To add your favorite artists to the list, add the artist's Spotify ID to line 18 in `app.py`. You can find the artist id [here!](https://support.tunecore.com/hc/en-us/articles/360040325651-How-to-Find-my-Spotify-Artist-ID)
+2. To add your favorite artists to the list, add the artist's Spotify ID to line 18 in `app.py`. You can find the artist id [here](https://support.tunecore.com/hc/en-us/articles/360040325651-How-to-Find-my-Spotify-Artist-ID)
 ​
 ## Run Application
 1. Run command in terminal: `python app.py`
-2. See output with the top 10 songs from a favorite artist as well as a preview of one of the listed songs! 
+2. See output with the top 10 songs from a favorite artist as well as a preview of one of the listed songs
 
 ## Heroku Deployment
 1. Create an account on Heroku: [Sign up for a free account](https://signup.heroku.com/login)
