@@ -11,7 +11,7 @@
         <h3> Top 10 Tracks </h3>
         <ol>
             {% for i in range(0,len)%}
-                <li>{{ tracks[i] }}</li>
+                <li><a href={{ tracks_lyrics_links[i] }}>{{ tracks[i] }}</a></li>
             {%endfor%}
         </ol>
         <h3><span> Song: {{track_name}} </span></h3>
