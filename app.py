@@ -4,6 +4,7 @@ import requests
 import os
 from dotenv import load_dotenv, find_dotenv
 from spotify import get_access_token, get_header, get_top_10_tracks, get_artist_image, get_tracks_images, get_tracks_previews
+from genius import get_all_tracks_lyrics_links
 
 app = Flask(__name__)
 
@@ -27,10 +28,12 @@ def hello_world():
     tracks = get_top_10_tracks(artist_id, header)
     tracks_images = get_tracks_images(artist_id, header)
     tracks_previews = get_tracks_previews(artist_id, header)
+    tracks_lyrics_links = get_all_tracks_lyrics_links(tracks)
     
     print(tracks[random_track])
     print(tracks_images[random_track])
     print(tracks_previews[random_track])
+    print(tracks_lyrics_links)
     
     return render_template(
         "index.html",
@@ -40,7 +43,8 @@ def hello_world():
         len = len(tracks),
         track_name = tracks[random_track],
         track_preview = tracks_previews[random_track],
-        track_image = tracks_images[random_track]
+        track_image = tracks_images[random_track],
+        tracks_lyrics_links = tracks_lyrics_links
     )
     
 app.run(
