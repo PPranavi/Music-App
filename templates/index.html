@@ -8,20 +8,26 @@
             <h1><span> {{ name }} </span></h1>
             <img src= "{{ image }}"/>
         </header>
-        <h3> Top 10 Tracks </h3>
-        <ol>
-            {% for i in range(0,len)%}
-                <li><a href={{ tracks_lyrics_links[i] }}>{{ tracks[i] }}</a></li>
-            {%endfor%}
-        </ol>
-        <h3><span> Song: {{track_name}} </span></h3>
-        <div>
-            <img src= "{{ track_image }}"/>
+        <div class="flex-container">
+            <div class="flex-child">
+                <h3> Top 10 Tracks </h3>
+                <ol>
+                    {% for i in range(0,len)%}
+                        <li><a href={{ tracks_lyrics_links[i] }}>{{ tracks[i] }}</a></li>
+                    {%endfor%}
+                </ol>
+            </div>
+            
+            <div class="flex-child">
+                <h3><span> Song: {{track_name}} </span></h3>
+                <div>
+                    <img class="shaped" src= "{{ track_image }}"/>
+                </div>
+                <div>
+                    <audio src="{{ track_preview }}" controls></audio>
+                </div>
+            </div>
         </div>
-        <div>
-             <audio src="{{ track_preview }}" controls></audio>
-        </div>
-       
         
     </body>
 </html>
