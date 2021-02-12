@@ -16,17 +16,17 @@ In your terminal:
 ## Copy this repo
 1. On your GitHub account, create a new repository
 2. In the terminal of your home directory, clone this repo: `git clone https://github.com/NJIT-CS490-SP21/project1-pp668.git`
-3. Change the current working directory into the clned directory and you should see all of these project files.
+3. Change the current working directory into the cloned directory and you should see all of these project files
 4. Connect this cloned repo to your GitHub repo from Step 1: `git remote set-url origin https://www.github.com/{your-username}/{your-repo-name}`
 5. Push the local repo to the remote repo: `git push origin main`
 
 ## Setup
-1. Create a `.env` file in your main directory and add your Spotify client ID key and client secret key with the lines: `export CLIENT_ID='YOUR_ID'` and `export CLIENT_SECRET='YOUR_SECRET'`
+1. Create a `.env` file in your main directory and add your Spotify client ID key and client secret key with the lines: `export CLIENT_ID='YOUR_ID'`, `export CLIENT_SECRET='YOUR_SECRET'`, and `export GENIUS_ACCESS_TOKEN='YOUR_TOKEN'`
 2. To add your favorite artists to the list, add the artist's Spotify ID to line 18 in `app.py`. You can find the artist id [here](https://support.tunecore.com/hc/en-us/articles/360040325651-How-to-Find-my-Spotify-Artist-ID)
 ​
 ## Run Application
 1. Run command in terminal: `python app.py`
-2. See output with the top 10 songs from a favorite artist as well as a preview of one of the listed songs
+2. See output with the top 10 songs from a favorite artist as well as a preview of one of the listed songs; you will also be able to click on each song listed to see the lyrics
 
 ## Heroku Deployment
 1. Create an account on Heroku: [Sign up for a free account](https://signup.heroku.com/login)
