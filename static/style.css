@@ -37,6 +37,10 @@ h1 span {
     background-color: #FEF7F4;
 }
 
+h2 {
+    font-size: 30px;
+}
+
 h3 {
     color: white;
     font-size: 30px;
@@ -44,6 +48,7 @@ h3 {
 
 ol li {
     font-size: 20px;
+    color: white;
 }
 
 img {
@@ -62,4 +67,12 @@ img {
     padding: 5px;
     width: 200px;
     height: 200px;
+}
+
+.artist_link {
+    color: #682813;
+}
+
+.track_links {
+    color: white;
 }

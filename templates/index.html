@@ -2,10 +2,12 @@
 <html>
     <head>
         <link rel="stylesheet" href={{ url_for('static', filename='style.css') }}/>
+        <base target="_blank">
     </head>
     <body>
         <header>
             <h1><span> {{ name }} </span></h1>
+            <h2>Click <a class="artist_link" href={{ link }}>here</a> to see the artist's Spotify page!</h2>
             <img src= "{{ image }}"/>
         </header>
         <div class="flex-container">
@@ -13,7 +15,7 @@
                 <h3> Top 10 Tracks </h3>
                 <ol>
                     {% for i in range(0,len)%}
-                        <li><a href={{ tracks_lyrics_links[i] }}>{{ tracks[i] }}</a></li>
+                        <li><a class="track_links" href={{ tracks_lyrics_links[i] }}>{{ tracks[i] }}</a></li>
                     {%endfor%}
                 </ol>
             </div>
