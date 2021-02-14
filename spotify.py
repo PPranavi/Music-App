@@ -57,3 +57,6 @@ def get_tracks_previews(artist_id, header):
     for i in range(10):
        tracks_previews.append(data["tracks"][i]["preview_url"])
     return tracks_previews
+    
+def get_artist_spotify_link(artist_id):
+    return "https://open.spotify.com/artist/"+artist_id
