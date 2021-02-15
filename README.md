@@ -13,6 +13,10 @@ In your terminal:
 1. Follow the instructions here: [Spotify Developer Account](https://developer.spotify.com/dashboard/)
 2. Register your application to get authorization keys: [Register your application](https://developer.spotify.com/documentation/general/guides/app-settings/#register-your-app) 
 
+## Sign up for a Genius Developer Account
+1. Follow the instructions here: [Spotify Developer Account](https://docs.genius.com/#/getting-started-h1)
+2. Register your application to get an access token: [Register your application](http://genius.com/api-clients) 
+
 ## Copy this repo
 1. On your GitHub account, create a new repository
 2. In the terminal of your home directory, clone this repo: `git clone https://github.com/NJIT-CS490-SP21/project1-pp668.git`
@@ -26,7 +30,7 @@ In your terminal:
 ​
 ## Run Application
 1. Run command in terminal: `python app.py`
-2. See output with the top 10 songs from a favorite artist as well as a preview of one of the listed songs; you will also be able to click on each song listed to see the lyrics
+2. See output with the top 10 songs from a favorite artist as well as a preview of one of the listed songs; click on each song listed to see the lyrics; click on the attached links to see the artist's Spotify and Twitter pages
 
 ## Heroku Deployment
 1. Create an account on Heroku: [Sign up for a free account](https://signup.heroku.com/login)
@@ -43,7 +47,7 @@ In your terminal:
 ## Known Problems
 1. A few songs from several artists do not have any preview links. On the web application, the audio feature is greyed out as a result. I have yet to address this issue in my code, but I will attempt to get around it by only fetching information of songs with all required fields filled in. 
 2. The code is slightly unorganized. In order to enhance user readibility, I will attempt to add more comments to my code and create classes where necessary to separate methods/function definitions.
-3. My web application has yet to be beautified. The UI is very rigid and is not layed out in an organized manner. I will attemp to beautify my web app by choosing more attractive colors, mature fonts, and styling elements (rounded image corners, etc.).
+3. My web application can be beautified a bit more. I will attemp to beautify my web app by choosing more attractive colors, mature fonts, and styling elements (rounded image corners, etc.).
 
 ## Technical Issues
 1. HTML/CSS updates: When I first started this project, I made a simple css file and html file to track my changes on the web app as I updated my code. However, after the creation of the HTML and CSS files, any changes I made would not come up in the browser preview for my web app. I initially thought I wrote bad code, so I decided to search the web for an answer to this problem. After spending an hour looking on Stackoverflow and other forums, I still had not found a solution. I decided it was time for me to pose a question on Slack, but someone had already beat me to it. I found out that a hard refresh was the solution to my problem. My browser was caching my old css file and wasn't reading the updates I made. A hard refresh (shift+cmd+R) solved the issue.
