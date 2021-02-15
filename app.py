@@ -5,6 +5,7 @@ import os
 from dotenv import load_dotenv, find_dotenv
 from spotify import get_access_token, get_header, get_top_10_tracks, get_artist_image, get_tracks_images, get_tracks_previews, get_artist_spotify_link
 from genius import get_all_tracks_lyrics_links
+from twitter import get_twitter_page
 
 app = Flask(__name__)
 
@@ -29,7 +30,8 @@ def hello_world():
     
     # retrieved from helper methods from Spotify methods class
     artist_img = get_artist_image(artist_id, header)
-    artist_link = get_artist_spotify_link(artist_id)
+    artist_spotify_link = get_artist_spotify_link(artist_id)
+    artist_twitter_link = get_twitter_page(artist_name)
     tracks = get_top_10_tracks(artist_id, header)
     tracks_images = get_tracks_images(artist_id, header)
     tracks_previews = get_tracks_previews(artist_id, header)
@@ -42,7 +44,8 @@ def hello_world():
         "index.html",
         name = artist_name,
         image = artist_img,
-        link = artist_link,
+        spotify_link = artist_spotify_link,
+        twitter_link = artist_twitter_link,
         tracks = tracks,
         len = len(tracks),
         track_name = tracks[random_track],

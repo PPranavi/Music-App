@@ -7,7 +7,9 @@
     <body>
         <header>
             <h1><span> {{ name }} </span></h1>
-            <h2>Click <a class="artist_link" href={{ link }}>here</a> to see the artist's Spotify page!</h2>
+            <div>
+                <h2><a class="artist_link" href={{ spotify_link }}>Spotify Page</a> &emsp; <a class="artist_link" href={{ twitter_link }}>Twitter Page</a></h2>
+            </div>
             <img src= "{{ image }}"/>
         </header>
         <div class="flex-container">
