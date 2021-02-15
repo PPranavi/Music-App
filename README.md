@@ -14,7 +14,7 @@ In your terminal:
 2. Register your application to get authorization keys: [Register your application](https://developer.spotify.com/documentation/general/guides/app-settings/#register-your-app) 
 
 ## Sign up for a Genius Developer Account
-1. Follow the instructions here: [Spotify Developer Account](https://docs.genius.com/#/getting-started-h1)
+1. Follow the instructions here: [Genius Developer Account](https://docs.genius.com/#/getting-started-h1)
 2. Register your application to get an access token: [Register your application](http://genius.com/api-clients) 
 
 ## Copy this repo
